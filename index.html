@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINESWEEPER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+<script src="script.js">
+
+</script>
+<body onload="GetArray()">
+    <div id="status"></div>
+    <div id="title">MINESWEEPER</div>
+    <div id="container">
+    <div class="grid-container" id="gridContainer" style="font-family: 'Orbitron', sans-serif;font-weight: 1000;">
+        <div id="pole00" class="grid-item"></div>
+        <div id="pole01" class="grid-item"></div>
+        <div id="pole02" class="grid-item"></div>
+        <div id="pole03" class="grid-item"></div>
+        <div id="pole04" class="grid-item"></div>
+        <div id="pole05" class="grid-item"></div>
+        <div id="pole06" class="grid-item"></div>
+        <div id="pole07" class="grid-item"></div>
+        <div id="pole08" class="grid-item"></div>
+        <div id="pole09" class="grid-item"></div>
+        <div id="pole10" class="grid-item"></div>
+        <div id="pole11" class="grid-item"></div>
+        <div id="pole12" class="grid-item"></div>
+        <div id="pole13" class="grid-item"></div>
+        <div id="pole14" class="grid-item"></div>
+        <div id="pole15" class="grid-item"></div>
+        <div id="pole16" class="grid-item"></div>
+        <div id="pole17" class="grid-item"></div>
+        <div id="pole18" class="grid-item"></div>
+        <div id="pole19" class="grid-item"></div>
+        <div id="pole20" class="grid-item"></div>
+        <div id="pole21" class="grid-item"></div>
+        <div id="pole22" class="grid-item"></div>
+        <div id="pole23" class="grid-item"></div>
+        <div id="pole24" class="grid-item"></div>
+        <div id="pole25" class="grid-item"></div>
+        <div id="pole26" class="grid-item"></div>
+        <div id="pole27" class="grid-item"></div>
+        <div id="pole28" class="grid-item"></div>
+        <div id="pole29" class="grid-item"></div>
+        <div id="pole30" class="grid-item"></div>
+        <div id="pole31" class="grid-item"></div>
+        <div id="pole32" class="grid-item"></div>
+        <div id="pole33" class="grid-item"></div>
+        <div id="pole34" class="grid-item"></div>
+        <div id="pole35" class="grid-item"></div>
+        <div id="pole36" class="grid-item"></div>
+        <div id="pole37" class="grid-item"></div>
+        <div id="pole38" class="grid-item"></div>
+        <div id="pole39" class="grid-item"></div>        
+        <div id="pole40" class="grid-item"></div>
+        <div id="pole41" class="grid-item"></div>
+        <div id="pole42" class="grid-item"></div>
+        <div id="pole43" class="grid-item"></div>
+        <div id="pole44" class="grid-item"></div>
+        <div id="pole45" class="grid-item"></div>
+        <div id="pole46" class="grid-item"></div>
+        <div id="pole47" class="grid-item"></div>
+        <div id="pole48" class="grid-item"></div>
+        <div id="pole49" class="grid-item"></div>
+        <div id="pole50" class="grid-item"></div>
+        <div id="pole51" class="grid-item"></div>
+        <div id="pole52" class="grid-item"></div>
+        <div id="pole53" class="grid-item"></div>
+        <div id="pole54" class="grid-item"></div>
+        <div id="pole55" class="grid-item"></div>
+        <div id="pole56" class="grid-item"></div>
+        <div id="pole57" class="grid-item"></div>
+        <div id="pole58" class="grid-item"></div>
+        <div id="pole59" class="grid-item"></div>
+        <div id="pole60" class="grid-item"></div>
+        <div id="pole61" class="grid-item"></div>
+        <div id="pole62" class="grid-item"></div>
+        <div id="pole63" class="grid-item"></div>
+        <div id="pole64" class="grid-item"></div>
+        <div id="pole65" class="grid-item"></div>
+        <div id="pole66" class="grid-item"></div>
+        <div id="pole67" class="grid-item"></div>
+        <div id="pole68" class="grid-item"></div>
+        <div id="pole69" class="grid-item"></div>
+        <div id="pole70" class="grid-item"></div>
+        <div id="pole71" class="grid-item"></div>
+        <div id="pole72" class="grid-item"></div>
+        <div id="pole73" class="grid-item"></div>
+        <div id="pole74" class="grid-item"></div>
+        <div id="pole75" class="grid-item"></div>
+        <div id="pole76" class="grid-item"></div>
+        <div id="pole77" class="grid-item"></div>
+        <div id="pole78" class="grid-item"></div>
+        <div id="pole79" class="grid-item"></div>
+        <div id="pole80" class="grid-item"></div>
+        <div id="pole81" class="grid-item"></div>
+        <div id="pole82" class="grid-item"></div>
+        <div id="pole83" class="grid-item"></div>
+        <div id="pole84" class="grid-item"></div>
+        <div id="pole85" class="grid-item"></div>
+        <div id="pole86" class="grid-item"></div>
+        <div id="pole87" class="grid-item"></div>
+        <div id="pole88" class="grid-item"></div>
+        <div id="pole89" class="grid-item"></div>
+        <div id="pole90" class="grid-item"></div>
+        <div id="pole91" class="grid-item"></div>
+        <div id="pole92" class="grid-item"></div>
+        <div id="pole93" class="grid-item"></div>
+        <div id="pole94" class="grid-item"></div>
+        <div id="pole95" class="grid-item"></div>
+        <div id="pole96" class="grid-item"></div>
+        <div id="pole97" class="grid-item"></div>
+        <div id="pole98" class="grid-item"></div>
+        <div id="pole99" class="grid-item"></div>
+
+    </div>
+</div>
+</body>
+</html>

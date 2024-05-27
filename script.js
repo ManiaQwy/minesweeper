@@ -5,14 +5,11 @@ for (var i = 0; i < x.length; i++) {
 }
 
 function initializeMines() {
-  // Reset the board
   for (let i = 0; i < 10; i++) {
     for (let j = 0; j < 10; j++) {
       x[i][j] = 0;
     }
   }
-
-  // Place 15 mines randomly
   let minesPlaced = 0;
   while (minesPlaced < 15) {
     let z = Math.floor(Math.random() * 10);
@@ -24,8 +21,6 @@ function initializeMines() {
     }
   }
 }
-
-// Call the function to initialize mines
 initializeMines();
 
 for (let i = 0; i < 10; i++) {
